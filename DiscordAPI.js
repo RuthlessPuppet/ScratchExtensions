@@ -9,7 +9,7 @@ class ScratchDiscord {
             "blocks": [
                         {
                             "opcode": "login",
-                            "blockType": "reporter",
+                            "blockType": "stack",
                             "text": "login to api using token [token]",
                             "arguments": {
                                 "token": {
@@ -38,7 +38,7 @@ class ScratchDiscord {
     }
     
     login({token}) {
-        return fetch(url).then(response => response.text())
+        return fetch(token).then(response => response.text())
     }
     
     jsonExtract({name,data}) {
