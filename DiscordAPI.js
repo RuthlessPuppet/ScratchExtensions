@@ -37,7 +37,7 @@ class ScratchDiscord {
         };
     }
     
-    fetchURL({url}) {
+    login({token}) {
         return fetch(url).then(response => response.text())
     }
     
