@@ -58,4 +58,4 @@ class ScratchDiscord {
     }
 }
 
-Scratch.extensions.register(new ScratchFetch())
+Scratch.extensions.register(new ScratchDiscord())
