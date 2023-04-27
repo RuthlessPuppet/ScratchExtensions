@@ -1,20 +1,20 @@
-class ScratchFetch {
+class ScratchDiscord {
     constructor() {
     }
     
     getInfo() {
         return {
-            "id": "Fetch",
-            "name": "Fetch",
+            "id": "discord",
+            "name": "Discord API",
             "blocks": [
                         {
-                            "opcode": "fetchURL",
-                            "blockType": "reporter",
-                            "text": "fetch data from [url]",
+                            "opcode": "login",
+                            "blockType": "stack",
+                            "text": "login to api using token [token]",
                             "arguments": {
-                                "url": {
+                                "token": {
                                     "type": "string",
-                                    "defaultValue": "https://api.weather.gov/stations/KNYC/observations"
+                                    "defaultValue": ""
                                 },
                             }
                         },
