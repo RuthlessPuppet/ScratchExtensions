@@ -13,7 +13,7 @@ class ScratchDiscord {
                             "text": "login to api using token [token]",
                             "arguments": {
                                 "token": {
-                                    "type": "string",
+                                    "type": "dropdown",
                                     "defaultValue": ""
                                 },
                             }
