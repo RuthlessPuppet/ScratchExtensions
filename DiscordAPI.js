@@ -1,11 +1,11 @@
-class ScratchDiscord {
+class ScratchFetch {
     constructor() {
     }
     
     getInfo() {
         return {
-            "id": "discord",
-            "name": "DiscordAPI",
+            "id": "Fetch",
+            "name": "Fetch",
             "blocks": [
                         {
                             "opcode": "fetchURL",
@@ -36,7 +36,7 @@ class ScratchDiscord {
                 ],
         };
     }
-
+    
     fetchURL({url}) {
         return fetch(url).then(response => response.text())
     }
@@ -57,4 +57,5 @@ class ScratchDiscord {
         }
     }
 }
-Scratch.extensions.register(new ScratchDiscord());
+
+Scratch.extensions.register(new ScratchFetch())
