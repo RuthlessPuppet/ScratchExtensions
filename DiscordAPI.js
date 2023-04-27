@@ -9,7 +9,7 @@ class ScratchDiscord {
             "blocks": [
                         {
                             "opcode": "login",
-                            "blockType": "stack",
+                            "blockType": "reporter",
                             "text": "login to api using token [token]",
                             "arguments": {
                                 "token": {
