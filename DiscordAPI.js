@@ -45,7 +45,7 @@
             return {
                 "id": "discord",
                 "name": "Discord API",
-                "MenuIconURI": blockLogo,
+                "menuIconURI": blockLogo,
                 "blocks": [
                             {
                                 "opcode": "login",
