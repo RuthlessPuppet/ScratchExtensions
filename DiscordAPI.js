@@ -2,7 +2,7 @@
 //For example, blocks that access scratch variables such as lists use the vm
 //Block type can be reporter, Boolean, hat, or command
 //You can code blocks to do javascript functions
-//The blocks/menu img can be set using a data uri in the get info functino, see below
+//The blocks/menu img can be set using a data uri in the get info function, see below
 /*
   "blockIconURI": blockIcon,
   "menuIconURI": menuIcon,
@@ -58,6 +58,21 @@
                                             },
                                         }
                             },
+                            {
+                                "opcode" : "reply",
+                                "blockType" : "command",
+                                "text" : "Reply to message [object] with message: [message]",
+                                "arguments": {
+                                  "object" : {
+                                      "type": "string",
+                                      "defaultValue": ""
+                                            },
+                                    "message" : {
+                                      "type":"string",
+                                      "defaultValue":"Hello World!"
+                                    }
+                                }
+                            }
                         ],
                     };
                 }
@@ -65,6 +80,11 @@
         login({token}) 
         {
             
+        }
+
+        reply({object, message})
+        {
+          
         }
     }
 
